@@ -451,10 +451,19 @@ header a:hover{
     background-color: #fafafa;
 }
 
-@media (max-width:770px) {
+@media (max-width:768px) {
     .footer{
       padding-left: 0px;
       padding-right: 0px;
+    }
+
+    .info{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .company-info{
+        margin: auto;
     }
 } 
 
