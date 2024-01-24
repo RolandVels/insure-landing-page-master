@@ -358,7 +358,11 @@ header a:hover{
     position: relative;
 }
 
-@media (max-width:770px) {
+.about h1:nth-child(2){
+    display: none;
+}
+
+@media (max-width:768px) {
     .about{
       padding-left: 0px;
       padding-right: 0px;
@@ -389,8 +393,16 @@ header a:hover{
         display: grid;
     }
 
+    .about h1:nth-child(1){
+        display: none;
+    }
+
+    .about h1:nth-child(2){
+        display: block;
+    }
+
     .about-us{
-    
+    padding-top: 40px;
     display: grid;
     justify-items: center;
     }
@@ -398,7 +410,35 @@ header a:hover{
     .about-us p{
         max-width: 30ch;
     }
-}
+
+    .about h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .overline-mobile{
+        border-top: solid 2px gray;
+        padding-top: 40px;
+    }
+
+    .more-work{
+        flex-direction: column;
+        margin: 20px;
+        height: 350px !important;
+        padding-bottom: 30px;
+    }
+
+    .more-work h2 {
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+    
+
+    .about-pattern{
+        display: none;
+    }
+
+ }
 
 #about-us-wrap h3{
     font-family: 'DM Serif Display', serif;
@@ -434,9 +474,14 @@ header a:hover{
     background-color: #000000;
 }
 
-.more-work h1 {
+.more-work h2 {
     margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 3rem;
 }
+
 
 .about-pattern{
     position: absolute;
