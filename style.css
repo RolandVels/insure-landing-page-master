@@ -390,7 +390,14 @@ header a:hover{
 @media (max-width:768px) {
 
     #about-us-wrap{
-        display: grid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    #about-us-wrap > *:not(:last-child) {
+        padding-right: 0;
     }
 
     .about h1:nth-child(1){
@@ -435,6 +442,47 @@ header a:hover{
     
 
     .about-pattern{
+        display: none;
+    }
+
+    .about-pattern-mobile{
+        display: block !important;
+        position: absolute;
+        right: 20px;
+    }
+
+    .top-footer{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+    }
+
+    .footer-background-pattern{
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+
+    .footer-pattern{
+        display: none;
+    }
+
+    .footer-icon{
+        padding-bottom: 40px;
+    }
+
+    .socials-wrap{
+        gap: 20px !important;
+        padding-bottom: 30px;
+    }
+
+    .company-info{
+        font-size: 0.9rem;
+    }
+
+    .gap{
         display: none;
     }
 
@@ -490,6 +538,10 @@ header a:hover{
     z-index: 0;
 }
 
+.about-pattern-mobile{
+    display: none;
+}
+
 .footer{
     padding-left: 140px;
     padding-right: 140px;
@@ -517,11 +569,22 @@ header a:hover{
 } 
 
 .top-footer{
+    position: relative;
     display: flex;
     justify-content: space-between;
     border-bottom: solid 2px #827c86;
     padding-top: 70px;
     padding-bottom: 20px;
+}
+
+.footer-pattern{
+    position: absolute;
+    top: 0;
+    left: -140px;
+}
+
+.footer-background-pattern{
+    display: none;
 }
 
 .socials-wrap{
